@@ -3,7 +3,7 @@ package dev.pcloud.docletmarkdown;
 import com.sun.source.doctree.DocCommentTree;
 import com.sun.source.doctree.DocTree;
 import com.sun.source.util.DocTrees;
-import docs.Markdown.*;
+import dev.pcloud.docletmarkdown.Markdown.*;
 import jdk.javadoc.doclet.Doclet;
 import jdk.javadoc.doclet.DocletEnvironment;
 import jdk.javadoc.doclet.Reporter;
@@ -18,10 +18,10 @@ import javax.lang.model.util.Elements;
 import javax.tools.Diagnostic;
 import java.util.*;
 
-import static docs.FileUtils.createDirectory;
-import static docs.FileUtils.writeFile;
-import static docs.RenderUtils.printType;
-import static docs.RenderUtils.renderDocTree;
+import static dev.pcloud.docletmarkdown.FileUtils.createDirectory;
+import static dev.pcloud.docletmarkdown.FileUtils.writeFile;
+import static dev.pcloud.docletmarkdown.RenderUtils.printType;
+import static dev.pcloud.docletmarkdown.RenderUtils.renderDocTree;
 
 public class MarkdownDoclet implements Doclet {
     Reporter reporter;
